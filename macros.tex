@@ -1,0 +1,140 @@
+% Makra używane w projekcie
+
+% Proste umieszczenie obrazu
+\newcommand{\putcaptedimage}[3]
+{
+	\begin{figure}[h]
+		\begin{center}
+			\includegraphics[width=\textwidth]{#1}
+			\caption{#2}
+			\label{#3}
+		\end{center}
+	\end{figure}
+}
+
+% Proste umieszczenie tabelki
+\newcommand{\puttable}[2]
+{
+	\begin{center}
+		\begin{tabular}{#1}
+			#2
+		\end{tabular}
+	\end{center}
+}
+
+% Karta wroga
+\newcommand{\larpcardenemy}[5]
+{
+	\begin{tcolorbox}[colback=white]
+		\begin{center}
+			\textbf{#1}
+		\end{center}
+
+		#2
+		
+		\puttable{c c c}{
+		\textbf{Siła:} #3 & \textbf{Życie:} #4 & \textbf{Krew:} #5 \\
+		}
+		
+	\end{tcolorbox}
+}
+
+% Karta obiektu
+\newcommand{\larpcarditem}[2]
+{
+	\begin{tcolorbox}[colback=white]
+		\begin{center}
+			\textbf{#1}
+		\end{center}
+		\begin{center}
+		#2
+		\end{center}
+		
+	\end{tcolorbox}
+}
+
+% Karta bohatera
+\newcommand{\larpcardlinespecies}[3]{
+	\puttable{l r}{
+		\textbf{Gatunek:} #1 & \textbf{Pozycja:} #2 \\ \multicolumn{2}{c}{\textbf{Przynależność:} #3} \\
+	}
+}
+\newcounter{counterattr}
+\newcommand{\larpcardlineattributes}[3]{
+	\puttable{l c r}{
+		\textbf{Siła:} #1 & \textbf{Siła Woli:}
+			\setcounter{counterattr}{0}
+			\loop
+			\Square
+			\addtocounter{counterattr}{1}\ifnum\value{counterattr}<#2
+			\repeat
+		& \textbf{Życie:}
+			\setcounter{counterattr}{0}
+			\loop
+			\Square
+			\addtocounter{counterattr}{1}\ifnum\value{counterattr}<#3
+			\repeat
+		\\
+	}
+}
+\newcommand{\larpcardlinepower}[5]{
+	#1 (#3) -- \textbf{#2} -- #4 -- #5
+}
+\newcommand{\larpcardlineversus}[2]{
+	#1 \emph{versus} #2
+}
+\newcommand{\larpcardcharacter}[6]
+{
+	\begin{tcolorbox}[colback=white]
+		\begin{center}
+			\textbf{#1}
+		\end{center}
+		#2
+		
+		#3
+		
+		\begin{center}
+			\textbf{Moce:}
+		\end{center}
+		
+		#4
+		
+		\begin{center}
+			\textbf{Cele:}
+		\end{center}
+		#5
+		
+		#6
+		
+	\end{tcolorbox}
+}
+
+% Mechaniki wspólne
+\newcommand{\larplistall}{
+	\begin{itemize}
+		\item Liczniki Siły Woli i Życia są w formie trójwartościowych wskaźników. Brak obrażeń, obrażenie lekkie i ciężkie.
+		\item Możesz przerzucić zwykłą monetę za powierzchowne obrażenie Siły Woli.
+		\item Test Siły Woli -- rzuć monetami w liczbie pustych kratek Siły Woli.
+		\item Możesz oddać swoje punkty życia wampirowi w letargu, aby go obudzić.
+	\end{itemize}
+}
+
+% Mechaniki użytkowników krwi
+\newcommand{\larplistblood}{
+	\begin{itemize}
+		\item Ilość monet krwi oznacza poziom krwi.
+		\item Pobudzenie krwi polega na rzucie jedną monetą krwi i stracie jej przy czarnym wyniku.
+		\item Pobudź krew, aby wyleczyć 1 powierzchownych obrażeń.
+		\item Pobudź krew, aby wzmocnić się na jeden test o 1 punktów siły, można powtarzać.
+	\end{itemize}
+}
+	
+% Mechaniki wampirów
+\newcommand{\larplistvampire}{
+	\begin{itemize}
+		\item Po utracie życia zapadasz w letarg i ktoś musi oddać ci punkty życia, abyś wstał.
+		%TODO szał
+		
+	\end{itemize}
+
+}
