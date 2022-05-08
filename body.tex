@@ -80,6 +80,50 @@ Każdy może mieć wgląd jedynie do własnej karty postaci.
 		\item Kołki drewniane -- dla Ogrodnika, jako broń. Niech przebija serca i niech nie wykole nikomu oczu.
 	\end{enumerate}
 	
+	
+\section{Mechanika}
+	Lista mechanik, które przestrzegają dane postacie.
+	
+	Mechaniki wspólne dla wszystkich:
+	\begin{itemize}
+		\item Test cechy -- rzuć monetami w liczbie cechy, musisz wyrzucić liczbę sukcesów $\geqslant$ jak wróg.
+		\item Obrażenia otrzymuje atakowana strona w liczbie różnic sukcesów.
+		\item Liczniki Siły Woli i Życia są w formie trójwartościowych wskaźników. Brak obrażeń, obrażenie lekkie i ciężkie.
+		\item Możesz przerzucić zwykłą monetę za powierzchowne obrażenie Siły Woli.
+		\item Test Siły Woli -- rzuć monetami w liczbie pustych kratek Siły Woli.
+		\item Możesz oddać swoje punkty życia wampirowi w letargu, aby go obudzić.
+	\end{itemize}
+
+	Mechaniki dla użytkowników krwi:
+	\begin{itemize}
+		\item Ilość monet krwi oznacza poziom krwi.
+		\item Pobudzenie krwi polega na rzucie jedną monetą krwi i stracie jej przy czarnym wyniku.
+		\item Pobudź krew, aby wyleczyć 1 powierzchownych obrażeń.
+		\item Pobudź krew, aby wzmocnić się na jeden test o 1 punktów siły, można powtarzać.
+		\item Przy użyciu każdej dyscypliny pobudź krew.
+	\end{itemize}
+
+	Mechaniki dla wampirów:
+	\begin{itemize}
+		\item Po utracie życia zapadasz w letarg i ktoś musi oddać ci punkty życia, abyś wstał.
+		\item Po wyjściu z letargu pobudzasz krew i jeśli się nie uda, wpadasz w szał.
+		\item Po utracie krwi twoja Bestia wpada w szał.
+		\item Po utracie Siły Woli szalejesz i wpadasz w depresję. Wywołuje się twoja kompulsja klanowa.
+		\item Gdy twoja Bestia wpada w szał, to chce kogoś natychmiast wyssać. Twoja siła jest podwojona na ten czas.
+	\end{itemize}
+
+	Mechaniki dla śmiertelników:
+	\begin{itemize}
+		\item Po utracie życia jesteś w stanie krytycznym na granicy śmierci.
+		\item PO utracie Siły Woli wpadasz w depresję.
+	\end{itemize}
+
+	Mechaniki dla ghuli:
+	\begin{itemize}
+		\item Po utracie krwi nie wpadasz w szał.
+		\item Odzyskujesz punkt krwi co 10 minut.
+	\end{itemize}
+
 	%TODO MECHANIKA
 % Wampir oblany wodą święconą traci po jednym współczynniku cech.
 % Duch pokropiony wodą święconą dostaje poważne obrażenie życia.
@@ -143,15 +187,23 @@ Każdy może mieć wgląd jedynie do własnej karty postaci.
 				\larpcardlineattack{Jeśli nie udało się prześlizgnąć, kolec wyskakuje z impetem i robi szaszłyk.}{6}
 				}{4}{-}{-}
 		\end{multicols}
+		
+	
 
-%TODO
-% Miażdżące ściany
-% Rycerz - ze ściany wychodzi rycerz i walczy, jest połączony nitką ze ścianą
-% Przynęta - na środku pojawia się coś bardzo cennego dla osoby, która odkrywa karteczkę, a jeśli dotknie tego, zostanie pożarta
-% Fala kwasu - zadaje dodatkowe obrażenia jeśli oblany straci życie następnym razem
-% Grząski teren - zamek wciągnie i zada obrażenia tym, który nie przebiegną wystarczająco szybko
-% Zakryte przejście - przed wami ściana i tylko wyczuleni mogą wykryć że jest sztuczna, nic nie robi
-% Jęzor - wyskakuje jęzor i atakuje tego, kto wyrzuci najmniejszą liczbę sukcesów na fizyczne
+		%TODO
+		% Miażdżące ściany
+		% Rycerz - ze ściany wychodzi rycerz i walczy, jest połączony nitką ze ścianą
+		% Przynęta - na środku pojawia się coś bardzo cennego dla osoby, która odkrywa karteczkę, a jeśli dotknie tego, zostanie pożarta
+		% Fala kwasu - zadaje dodatkowe obrażenia jeśli oblany straci życie następnym razem
+		% Grząski teren - zamek wciągnie i zada obrażenia tym, który nie przebiegną wystarczająco szybko
+		% Zakryte przejście - przed wami ściana i tylko wyczuleni mogą wykryć że jest sztuczna, nic nie robi
+		% Jęzor - wyskakuje jęzor i atakuje tego, kto wyrzuci najmniejszą liczbę sukcesów na fizyczne
+
+	\subsection{Karty pomocnicze bohaterów}
+		Tutaj są zapisane wskazówki dla graczy, wykorzystujące ich moce.
+		%TODO
+		% Opis rytuału egzorcyzmu
+		% Opis użycia kalkulatora współrzędnych
 
 	\subsection{Współrzędne}
 	\label{sec:wspolrzedne}
@@ -165,6 +217,9 @@ Każdy może mieć wgląd jedynie do własnej karty postaci.
 
 	\subsection{Postaci}
 	\label{sec:characters}
+		Postacie są uporządkowane w kolejności, w jakiej należy je przyporządkowywać kolejnym osobom biorącym udział w zabawie.
+		Minimalna ilość graczy to 4.
+		\thispagestyle{empty}
 		\larpcardcharacter{Teodor Szymonowicki}
 			{\larpcardlinespecies{Wampir Ventrue}{Dziedzic i syn Księcia}{Dworzanie Księcia, Camarilla}}{
 			Twój ojciec, Książę, pałał się Nekromancją.
@@ -188,12 +243,9 @@ Każdy może mieć wgląd jedynie do własnej karty postaci.
 				\end{enumerate}
 			}
 			{\larpcardlineattributes{6}{8}{6}}
-			{
-				\larplistall{}
-				\larplistblood{}
-				\larplistvampire{}
-			}
+			{\larpcardlinecompulsion{Arogancja, żądza władzy nad innymi.}}
 			
+		\thispagestyle{empty}
 		\larpcardcharacter{Sławomir Szymonowicki}{
 			\larpcardlinespecies{Wampir Ventrue}{Wydziedziczony syn Księcia}{Dworzanie Księcia, Camarilla}}{
 			Twój ojciec wyklął ciebie, gdy zacząłeś lepiej sobie radzić w mocach Nekromancji, niż on sam.
@@ -215,12 +267,9 @@ Każdy może mieć wgląd jedynie do własnej karty postaci.
 				\end{enumerate}
 			}{
 			\larpcardlineattributes{5}{7}{5}}
-			{
-				\larplistall{}
-				\larplistblood{}
-				\larplistvampire{}
-			}
+			{\larpcardlinecompulsion{Arogancja, chęć podporządkowania sobie całego najbliższego świata niematerialnego.}}
 			
+		\thispagestyle{empty}
 		\larpcardcharacter{Gerwazy}{
 			\larpcardlinespecies{Wampir Malkawian}{Klucznik zamku}{Dworzanie Księcia, Camarilla}}{
 			Jesteś zaufanym klucznikiem, znasz wszystkie tajne przejścia w zamku.
@@ -242,11 +291,87 @@ Każdy może mieć wgląd jedynie do własnej karty postaci.
 				\end{enumerate}				
 			}{
 			\larpcardlineattributes{4}{6}{4}}
-			{
-				\larplistall{}
-				\larplistblood{}
-				\larplistvampire{}
+			{\larpcardlinecompulsion{Urojenia i wizje.}}
+			
+		\thispagestyle{empty}
+		\larpcardcharacter{Kamil}{
+			\larpcardlinespecies{Wampir Toreador}{Kapitan Księcia}{Dworzanie Księcia, Camarilla}}{
+			Jesteś zaufanym kapitanem Księcia.
+			Zostałeś wciągnięty przez zamek, ale z jakichś przyczyn nadal nieżyjesz.
+			Musisz pomóc absolutnie wszystkim rozwiązać ich problemy.
+			Coś dziwnego się dzieje z twoim ciałem, jeśli się skupisz, i nie masz pojęcia, co.
+			Możesz modyfikować swoje ręce na ostrza lub stać się zupełnie lekki.
+			Lepiej nie pokazywać tych zdolności innym.
+			}{
+				\begin{itemize}[noitemsep]
+					\item \larpcardlinepower{Transformacja}{Waga piórka}{Pobudzenie}{Zmniejszasz swój ciężar niemal do zera.}
+					\item \larpcardlinepower{Transformacja}{Pierwotna broń}{\larpcardlineversus{9}{Siła}}{Zmieniasz ręce w ostrza i możesz atakować nimi jak srebrem.}
+					\item \larpcardlinepower{Nadwrażliwość}{Obeah}{\larpcardlineversus{6}{2}}{Leczysz tyle powierzchownych obrażeń Siły Woli, ile masz nadwyżek punktów sukcesu.}
+				\end{itemize}
+			}{
+				\begin{enumerate}[noitemsep]
+					\item Uratować Księcia.
+					\item Dowiedzieć się prawdy o zamku.
+					\item Zemścić się na tym, kto porwał Księcia.
+					\item Dowiedzieć się, co to za nowe moce posiadasz.
+				\end{enumerate}
+			}{
+			\larpcardlineattributes{5}{4}{4}}
+			{\larpcardlinecompulsion{Obłęd na temat jakiejś rzeczy lub kogoś, możesz mówić tylko o tym.}}
+			
+		\thispagestyle{empty}
+		\larpcardcharacter{Amelia}{
+			\larpcardlinespecies{Wampir Banu Haquim}{Tajna zabójczyni}{-}}{
+			Informacja o tym, kto jest twoim zleceniodawcą, została ci wymazana z głowy.
+			Wiesz że twój klan nigdy się nie poddaje, a jeśli ktoś ma być zabity, to będzie to nieuniknione.
+			Twoim celem jest szeryf.
+			I warto by zwalić winę na kogoś innego.
+			Posiadasz zestaw broni na wampiry.
+			Uważasz, że inne wampiry nie mają prawa należeć do żadnych sekt jak Camarilla, a tylko przynależność klanowa się liczy.
+			}{
+				\begin{itemize}[noitemsep]
+					\item \larpcardlinepower{Magia Krwi}{Korozyjne Vitæ}{Pobudzenie}{Twoja krew produkuje silny kwas, jeden test pobudzenia na 1 dm³ materiału.}
+					\item \larpcardlinepower{Magia Krwi}{Stłumienie Vitæ}{\larpcardlineversus{4}{Siła Woli}}{Usuwasz innemu użytkownikowi krwi jeden punkt krwi.}
+					\item \larpcardlinepower{Magia Krwi}{Dotyk Skorpiona}{Pobudzenie}{Twoja krew produkuje silną truciznę, którą można pokryć broń dla podwójnych obrażeń lub dać sobie wyssać.}
+					\item \larpcardlinepower{Magia Krwi}{Kradzież Vitæ}{\larpcardlineversus{6}{Siła}}{Rozrywasz komuś tętnicę na odległość, aby przesikać 1 punkt krwi wprost do ust. Rana się zasklepia.}
+				\end{itemize}
 			}
+			{
+				\begin{itemize}[noitemsep]
+					\item Sproszkować szeryfa Księcia.
+					\item Zwalić winę na kogoś innego.
+					\item Uciec.
+				\end{itemize}
+			}{
+			\larpcardlineattributes{7}{5}{4}}
+			{\larpcardlinecompulsion{Osądzenie i zabójstwo każdego, kto się nie zgadza z twoimi przekonaniami.}}
+			
+		\thispagestyle{empty}
+		\larpcardcharacter{Ryszard}{
+			\larpcardlinespecies{Wampir Nosferatu}{Szeryf Księcia}{Dworzanie Księcia, Camarilla}}{
+			Całe nieżycie byłeś razem z Księciem.
+			Zwykle nosisz zakryty hełm aby wzbudzać mniejszy strach wśród wrogów waszej domeny.
+			Nie pamiętasz, gdy ostatni raz widziałeś swoją twarz w lustrze, a nadal masz koszmary.
+			Posiadasz zastraszanie oraz znasz się na anatomii i torturach.
+			Umiesz obsługiwać zaawansowane urządzenia technologiczne.}
+			{
+				\begin{itemize}[noitemsep]
+					\item TODO
+				\end{itemize}
+
+			}{
+				\begin{enumerate}[noitemsep]
+					\item Uratować Księcia.
+					\item Ochronić poddanych.
+					\item Ochronić mury zamku, abyście dalej mogli w nim mieszkać.
+				\end{enumerate}
+			}{
+			\larpcardlineattributes{6}{6}{5}}
+			{\larpcardlinecompulsion{Kryptofilia. Chęć poznania wszystkich możliwych sekretów wszystkiego wokół.}}
+			
+
+%TODO przerwa
+
 			
 		\larpcardcharacter{Dionizy Duczeski}{
 			\larpcardlinespecies{Naturalny ghul}{Znajomy Księcia}{Dworzanie Księcia, Camarilla}}{
@@ -271,41 +396,13 @@ Każdy może mieć wgląd jedynie do własnej karty postaci.
 				\end{enumerate}
 			}{
 			\larpcardlineattributes{4}{8}{4}}
-			{
-				\larplistall{}
-				\larplistblood{}
-				\larplistmortal{}
-				\larplistghoul{}
-			}
+			{}
 
 %TODO
 
 
-% Ryszard, wampir, Nosferatu, szeryf Księcia, poddany Księcia
-% Całe nieżycie byłeś razem z Księciem. Zwykle nosisz zakryty hełm aby wzbudzać mniejszy strach wśród wrogów waszej domeny. Nie pamiętasz, gdy ostatni raz widziałeś swoją twarz w lustrze, a nadal masz koszmary. Posiadasz zastraszanie oraz znasz się na anatomii i torturach.
-% Uratować Księcia
-% Ochronić poddanych
-% Ochronić mury zamku, abyście dalej mogli w nim mieszkać
-% Kamil, wampir, Toreador, kapitan Księcia, poddany Księcia
-% Jesteś zaufanym kapitanem Księcia. Zostałeś wciągnięty przez zamek, ale z jakichś przyczyn nadal nieżyjesz. Musisz pomóc absolutnie wszystkim rozwiązać ich problemy. Coś dziwnego się dzieje z twoim ciałem, jeśli się skupisz i nie masz pojęcia, co. Możesz modyfikować swoje ręce na ostrza lub stać się zupełnie lekki. Lepiej nie pokazywać tych zdolności innym.
-% Transformacja - Waga piórka (1)
-% Transformacja - Pierwotna broń (2) - Zmień swoje ręce w ostrza
-% Nadwrażliwość - Obeah(2) - Pozwala wyleczyć tyle powierzchownych obrażeń siły woli, ile jest nadwyżek punktów sukcesu
-% Odporność - (1)
-% Uratować Księcia
-% Dowiedzieć się prawdy o zamku
-% Zemścić się na tym, kto porwał Księcia
-% Dowiedzieć się, co to za nowe moce posiadasz
 
-% Amelia, wampir, Banu Haquim, tajna zabójczyni
-% Informacja o tym, kto jest twoim zleceniodawcą, została ci wymazana z głowy. Wiesz że twój klan nigdy się nie poddaje, a jeśli ktoś ma być zabity, to będzie to nieuniknione. Twoim celem jest szeryf. I warto by zwalić winę na kogoś innego. Posiadasz zestaw broni na wampiry.
-% Magia Krwi - Korozyjne Vitæ(1) - Wylewasz swoją krew, aby skorodować jakiś obiekt, jeden test pobudzenia na 1 dm³ materiału, wylana krew nie odejmuje punktów krwi
-% Magia Krwi - Stłumienie Vitæ(2) - Zabiera innemu wampirowi punkt krwi​​​​​​​
-% Magia Krwi - Dotyk Skorpiona(3) - Pobudzenie krwi produkuje truciznę, którą można pokryć broń albo dać sobie wyssać
-% Magia Krwi - Kradzież Vitæ(4) - Pozwala rozerwać czyjeś tętnice, aby przekazać tobie jeden punkt krwi
-% Sproszkować szeryfa Księcia
-% Zwalić winę na kogoś innego
-% Uciec
+
 
 % Horacy, wampir, Tzimisce, agent Hadeona Jarosławicza
 % Jesteś agentem wysłanym przez samego Hadeona w celu zbadania sprawy zamku i rozszerzenia ewentualnych włości. Wiesz, że zamek jest wielkim Kniaziem stworzonym dawno temu przez potęńnego wojewodę z twojego klanu. Rozpoznajesz moce transformacji i typy spotkanych Szlachciców. Wiesz, że zamek posiada rdzeń, ale nie wiesz gdzie. Posiadasz fiolkę z krwią Hadeona, którą musisz pokropić rdzeń. Potrafisz zmienić swój i czyjś kształt, aby wyglądał na innego lub aby modyfikować jego anatomię. Jeśli nie uda ci się pokropić krwią Hadeona rdzenia, powinieneś napoić nią któregoś wampira, aby był jego sługą.
@@ -313,18 +410,19 @@ Każdy może mieć wgląd jedynie do własnej karty postaci.
 % Przeżyć
 % Dać Hadeonowi kontrolę nad zamkiem
 % Spowodować wypicie krwi Hadeona przez jakiegoś ważnego wampira
+% Kompulcja: Chęć posiadania najcenniejszych rzeczy w zamku
 
 % Hans, wampir, Brujah, agent Księcia Szczecina
 % Książę Szczecina jest córką Hadeona, a ty jesteś z nią związany więzami krwi. Zostałeś wysłany tutaj, aby przejąć władzę i poszerzyć domenę.​​​​​​​ Nie wiesz, czemu cię wysłali tutaj, ale masz zrobić co do ciebie należy. Umiesz rozpoznać moce Transformacji, jeśli je zobaczysz. Twój Książę także chciałby od ciebie ochrony którychkolwiek Tzimisce i użytkowników Transformacji.
 % Rozprawić się z Camarillą
 % Ochronić Horacego
+% Kompulsja: Bunt przeciwko narzuconym zasadom
 
 % Bonifacy, wampir, Toreador, agent Księcia Warszawy, Camarilla
 % Hania Buszek bardzo by chciała upewnić się, że włości Camarilli zostaną w dobrych rękach.​​​​​​ Słyszałeś, że prócz syna księcia także inni sobie ostrzą kły na ową posiadłość. Zamek powinien być w niezniszczonym stanie, aby nowi lokatorzy mogli bezpiecznie w nim przebywać.
 % Rozprawić się z kimkolwiek spoza Camarilli, kto chce przejąć zamek
 % Ochronić mury zamku, aby był bezpieczny dla nowych lokatorów
-
-
+% Kompulsja: Obsesja na punkcie czegoś
 
 % Bartłomiej Bratowicz, naturalny ghul, zły
 % Naturalny ghul, którego ród brata się z Sabatem i wszystkim co najgorsze. Bezwzględny i obleśny. Chcesz się zemścić na Duczeskich za odwrócenie się od Tzimisce oraz na podwładnych Hadeona za odwrócenie się od ciebie. Posiadasz branie dystansowe i białe bronie na wampiry. Masz obleśny koc, którym się ubierasz, którego nawet pożar nie chce trawić.
@@ -334,6 +432,7 @@ Każdy może mieć wgląd jedynie do własnej karty postaci.
 % Znaleźć sobie jakiegoś poddanego albo kompana do rządzenia
 % Zabić wszystkich innych w najokrutniejszy sposób
 % Doprowadzić kogoś do załamania nerwowego
+
 % Ojciec Arnold, człowiek, ksiądz Inkwizycji, ludzie
 % Zostałeś posłany przez Zakon św. Leopolda, aby upewnić się, że wszystko w zamku ma być ostatecznie martwe. Nie podzielasz jednak wszystkich idei swoich przełożonych. Chcesz uratować wszystkie dobre istoty w tajemnicy przed resztą zakonu. Posiadasz Prawdziwą Wiarę, która odstrasza wampiry. Zamek jest ostrzeliwany przez Inkwizycję, dostajesz informację radiową o wszystkich zawałach jakie się zdarzyły lub zdarzą. Nie grozi ci przysypanie. Wiesz, że zamek jest wielkim Kniaziem stworzony dawno temu przez wojewodę Tzimisce. Posiada rdzeń, który wszystko kontroluje. Znasz jedną ze współrzędnych rdzenia. Możesz wykonać egzorcyzm na kimś, aby wypędzić z niego ducha. Potrafisz rozpoznać moce transformacji, jeśli ktoś ich używa. Przypałętał się do was jakiś dziwny fan wampirów Ludwik, chcesz go przekonać, aby sobie poszedł lub wstąpił do Inkwizycji.
 % Pomodlenie się odstrasza wampiry (6)
@@ -343,6 +442,7 @@ Każdy może mieć wgląd jedynie do własnej karty postaci.
 % Nawrócić złe istoty na dobrą drogę
 % Przekonać Ludwika, aby sobie poszedł lub do was dołączył
 % Zniszczyć zamek
+
 % Siostra Anastazja, człowiek, siostra agentka z Watykanu, ludzie
 % Inkwizycja nie ma najlepszej renomy w Watykanie. Dlatego sam papież posłał ciebie, abyś kontrolowała postępy w niszczeniu zamku. Posiadasz pistolet na wodę święconą i duże baniaki na plecach. Jesteś bezwzględna w wykonywaniu swojej pracy i nie masz litości dla pomiotów szatańskości. Przypałętał się do was dziwny człowiek Ludwik, nie pozwól aby dołączył i wzmocnił Inkwizycję.
 % Gaszenie pożaru (4) - możesz opsikać dostatecznie mały ogień, aby go ugasić
@@ -350,11 +450,13 @@ Każdy może mieć wgląd jedynie do własnej karty postaci.
 % Zniszczyć zamek
 % Przekonać Ludwika, aby sobie poszedł i nie dołączał do Inkwizycji
 % Zabić wszystkich nieludzi
+
 % Szlachcic Alfa, ghul, stworzony przez Zamek
 % Zamek jest potężnym Kniaziem. Tak potężnym, że stworzył ciebie, abyś usunął z ich rejonów wszystkich. Masz zaawansowane moce transformacji, które pozwalają ci przybierać wygląd normalnego wampira. Wiesz, że rdzeń, który steruje zamkiem, został wtopiony w ciało kapitana, a on o tym nie wie. Powinieneś go chronić tak, aby nikt nie widział. Możesz zapytać się Mistrzów Larpa o wszystkie informacje na temat zamku jak miejsca pożarów i zawałów. Znasz pozycje tajnych przejść. Zamek nie atakuje ciebie i nie musisz odkrywać karteczek (ale niech inni o tym nie wiedzą). Gdy zamek zostanie przez kogoś zraniony, możesz napić się z rany jego krwi, aby odzyskać jej punkty. Wiesz, że Książę został porwany i zaabsorbowany przez zamek i poszukiwania jego są daremne. Jeśli ktoś leży martwy lub w letargu, możesz wskazać zamkowi jego pozycję, aby go zaabsorbował. Wtedy zmienia się w twojego pomocnika i może ci pomagać. Jednak nie ma ludzkiego wyglądu, traci wszystkie moce i zachowuje cechy.
 % Wskazanie na absorpcję (8), daje ilość punktów życia, ile masz sukcesów
 % Chronić kapitana tak, aby nie wzbudzać podejrzeń
 % Dać zaabsorbować wszystkich innych, a na końcu kapitana
+
 % Duch przyzwany przez Księcia
 % Jesteś duchem snującym się po zamku. Książę przyzwał cię w czasie jednego ze swoich eksperymentów. Jesteś domyślnie niewidoczny dla wszystkich innych, chyba że zdecydujesz się pokazać. Możesz przejąć kontrolę nad kimś, aby chodził razem z tobą i wykonywał twoje rozkazy, używasz do tego czapeczki ze sznurkiem. Znasz pozycje tajnych przejść. Zamek także cię atakuje, ale poważne obrażenia są dla ciebie powierzchowne, a powierzchowne żadne. Nie możesz atakować nikogo żywego, a nieżywych atakujesz mentalnymi cechami i zadajesz obrażenia Siły Woli. Wiesz, że zamek jest potężnym Kniaziem. Jeśli znajdziesz kogoś martwego lub w letargu, możesz wyrwać mu duszę, dzięki czemu stanie się duchem podobnym do ciebie. Traci swoje moce i cechy fizyczne, ale nie musi chcieć ci pomagać.
 % Przejęcie kontroli, przeciwko SW (5)
@@ -364,6 +466,7 @@ Każdy może mieć wgląd jedynie do własnej karty postaci.
 % Stworzyć sobie kompanów do mieszkania razem
 % Pozbyć się wszystkich innych z zamku
 % Zabić zamek i zostawić mury, albo nawiązać z nim pokój
+
 % Obrońca Włości, potwór, przyzwany przez Księcia, poddany Księcia
 % Jesteś wielkim potworem o 4 łapach i paszczy. Zostałeś przyzwany przez Księcia abyś strzegł jego domeny. Lubisz łaskotki po brzuszku. Masz 5 kolców, które możesz wystrzelić. Masz 5 jaj, które możesz w kimś złożyć. Możesz kogoś pożreć, aby zabrać mu jeden punkt życia lub krwi. Za punkt krwi możesz zregenerować kolec. Trawienie kogoś trwa długo, a twoja ofiara pozostaje świadoma. Po przekazaniu jednego życia lub krwi może próbować się wydostać. Jeśli znajdziesz kogoś martwego lub w letargu, możesz w nim złożyć jaja, aby po krótkiej chwili zmienił się w twojego całkowitego poddanego.
 % Pożarcie kogoś (7) - przeciwko fizycznym
@@ -372,16 +475,21 @@ Każdy może mieć wgląd jedynie do własnej karty postaci.
 % Uratować Księcia
 % Zabić zamek
 % Pozbyć się wszystkich spoza poddanych Księcia
+
 % Otto, wampir, Gangriel, ogrodnik Księcia
 % Chcesz sadzić roślinki i tylko to cię interesuje, Niech wszyscy spadają. Możesz się zmieniać w małe zwierzę i przechodzić przez gruzowiska oraz tajne przejścia, jeśli zobaczysz jak ktoś go używa. Posiadasz bogaty zestaw cisowych kołków, nadają się rarówno do podtrzymywania pomidorów, jak i do wbijania pijawkom w serca. 
 % Wypierdolić wszystkich poza zamek
 % Przyciąć żywopłot
+% Kompulsja: dzikość, drapanie i gryzienie, tylko pojedyncze słowa
+
 % Ludwik, człowiek, fan wampirów, ludzie
-% Czytałeś o wampirach i innych nadprzyrodzonych istotach tak dużo, że zawsze chciałeś się nim stać. Przy okazji jesteś ciekawy zamku. Masz sprzęt, który tylko ty umiesz obsługiwać i który pozwala na określenie jednej z pozycji rdzenia. Masz broń przeciwko wampirom, która zadaje silne obrażenia. Chcesz dać się spokrewnić przez wampira, zmienić w ducha itp. Jesteś trochę nieufny wobec nich, żeby nie dać się zwyczajnie wyssać od razu. Inkwizycja bardzo się tobą interesuje.
+% Czytałeś o wampirach i innych nadprzyrodzonych istotach tak dużo, że zawsze chciałeś się nim stać. Przy okazji jesteś ciekawy zamku. Masz sprzęt, który wydaje ci się, że tylko ty umiesz obsługiwać i który pozwala na określenie jednej z pozycji rdzenia. Masz broń przeciwko wampirom, która zadaje silne obrażenia. Chcesz dać się spokrewnić przez wampira, zmienić w ducha itp. Jesteś trochę nieufny wobec nich, żeby nie dać się zwyczajnie wyssać od razu. Inkwizycja bardzo się tobą interesuje.
 % Przeżyć
 % Przekonać kogoś aby zmienił cię w istotę nadprzyrodzoną lub dołączyć do jakiejś fajnej grupy
+
 % Sebastian, wampir, Brujah, Anarchiści
 % Byłeś dobrym kolegą Księcia mimo że on należał do Camarilli. Przyszedłeś go odwiedzić, aby sprawdzić jak się miewa. Uchodzisz wśród innych poddanych za durnego dresa i trochę nim jesteś. Ale za to potrafisz szybko biegać i się wspinać. Jebać Inkwizycję na 100%. Jesteś waleczny, odważny i skłonny do układów. Potrafisz rozniecać pożary, ale za każdym razem testujesz, czy nie uciekniesz ze strachu.
 % Wzniecanie pożaru (6) - siła pożaru to liczba sukcesów
 % Uratować Księcia
 % Przejąć kontrolę nad zamkiem, jakoś
+% Kompulcja: bunt przeciwko swoim celom i narzucaniu woli przez innych

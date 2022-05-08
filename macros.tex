@@ -92,9 +92,15 @@
 \newcommand{\larpcardlinepassive}[1]{
 	Pasywna \textbf{Test wroga:} $<$ #1
 }
+\newcommand{\larpcardlinecompulsion}[1]{
+	\begin{center}
+		\textbf{Kompulsja:} #1
+	\end{center}
+}
 \newcommand{\larpcardcharacter}[7]
 {
-	\begin{tcolorbox}[colback=white]
+	\begin{tcolorbox}[colback=white, size=fbox]
+
 		\begin{center}
 			\textbf{#1}
 		\end{center}
@@ -102,76 +108,19 @@
 		
 		#3
 		
-		\begin{center}
-			\textbf{Moce:}
-		\end{center}
+% 		\begin{center}
+% 			\textbf{Moce:}
+% 		\end{center}
 		
 		#4
 		
-		\begin{center}
-			\textbf{Cele:}
-		\end{center}
+% 		\begin{center}
+% 			\textbf{Cele:}
+% 		\end{center}
 		#5
 		
 		#6
 		
-		\begin{center}
-			\textbf{Zasady:}
-		\end{center}
-		{
-		\tiny
 		#7
-		}
-		
 	\end{tcolorbox}
-}
-
-% Mechaniki wspólne
-\newcommand{\larplistall}{
-	\begin{itemize}[noitemsep]
-		\item Test cechy -- rzuć monetami w liczbie cechy, musisz wyrzucić liczbę sukcesów $\geqslant$ jak wróg.
-		\item Obrażenia otrzymuje atakowana strona w liczbie różnic sukcesów.
-		\item Liczniki Siły Woli i Życia są w formie trójwartościowych wskaźników. Brak obrażeń, obrażenie lekkie i ciężkie.
-		\item Możesz przerzucić zwykłą monetę za powierzchowne obrażenie Siły Woli.
-		\item Test Siły Woli -- rzuć monetami w liczbie pustych kratek Siły Woli.
-		\item Możesz oddać swoje punkty życia wampirowi w letargu, aby go obudzić.
-	\end{itemize}
-}
-
-% Mechaniki użytkowników krwi
-\newcommand{\larplistblood}{
-	\begin{itemize}[noitemsep]
-		\item Ilość monet krwi oznacza poziom krwi.
-		\item Pobudzenie krwi polega na rzucie jedną monetą krwi i stracie jej przy czarnym wyniku.
-		\item Pobudź krew, aby wyleczyć 1 powierzchownych obrażeń.
-		\item Pobudź krew, aby wzmocnić się na jeden test o 1 punktów siły, można powtarzać.
-		\item Przy użyciu każdej dyscypliny pobudź krew.
-	\end{itemize}
-}
-	
-% Mechaniki wampirów
-\newcommand{\larplistvampire}{
-	\begin{itemize}[noitemsep]
-		\item Po utracie życia zapadasz w letarg i ktoś musi oddać ci punkty życia, abyś wstał.
-		\item Po wyjściu z letargu pobudzasz krew i jeśli się nie uda, wpadasz w szał.
-		\item Po utracie krwi twoja Bestia wpada w szał.
-		\item Po utracie Siły Woli szalejesz i wpadasz w depresję. Wywołuje się twoja kompulsja klanowa.
-		\item Gdy twoja Bestia wpada w szał, to chce kogoś natychmiast wyssać. Twoja siła jest podwojona na ten czas.
-	\end{itemize}
-}
-
-% Mechaniki śmiertelników
-\newcommand{\larplistmortal}{
-	\begin{itemize}[noitemsep]
-		\item Po utracie życia jesteś w stanie krytycznym na granicy śmierci.
-		\item PO utracie Siły Woli wpadasz w depresję.
-	\end{itemize}
-}
-
-% Mechaniki ghuli
-\newcommand{\larplistghoul}{
-	\begin{itemize}[noitemsep]
-		\item Po utracie krwi nie wpadasz w szał.
-		\item Odzyskujesz punkt krwi co 10 minut.
-	\end{itemize}
 }
