@@ -69,17 +69,18 @@ Każdy może mieć wgląd jedynie do własnej karty postaci.
 	Punkty Siły Woli są brane z ilości pustych kratek w liczniku.
 	
 	Obie strony rzucają w kubku, bądź w dłoniach liczbę monet w ilości cechy.
-	Różnica w liczbie zwycięstw na korzyść atakującego oznacza liczbę zadanych obrażeń.
+	Różnica w liczbie zwycięstw na korzyść atakującego oznacza liczbę zadanych obrażeń, do której dodaje się siłę broni.
 	Zwycięstwa na korzyść atakowanego oznaczają, że udało się jej uniknąć konsekwencji, chyba że posiada odpowiednią pasywną moc do kontrataku.
 	
-	Jeśli ktoś chce kogoś zaatakować, to musi takie osoby wpierw pochwycić lub zagonić w kozi róg, chyba że jest niewidzialny, bądź złapie je fizycznie z zaskoczenia.
+	Jeśli ktoś chce kogoś zaatakować wręcz, to musi takie osoby wpierw pochwycić lub zagonić w kozi róg, chyba że jest niewidzialny, bądź złapie je fizycznie z zaskoczenia.
+	Atak dystansowy nie wymaga pochwycenia, a atakowana osoba jest informowana o tym, że atakujący w nią strzela.
 	Jeśli jest kilka osób, które chcę walczyć ze sobą, to rzucają do skutku z parametru \textbf{Siła} i kto będzie miał najwięcej zwycięstw, zaczyna atak.
 	Osoba atakująca ma dodatkową monetę, jeśli ktoś jej pomaga w ataku.
 	Jeśli celem ataku jest kilka osób, wtedy należy podzielić swoją pulę punktów i zaatakować każdego osobno jej częścią.
 	
 	Atakujący zadaje obrażenia, osoba atakowana prawie nigdy nie zadaje obrażeń.
 	
-	Po wykonaniu akcji atakowana osoba może próbować uciekać bądź atakować agresora z powrotem.
+	Po wykonaniu akcji, atakowana osoba może próbować uciekać bądź atakować agresora z powrotem.
 
 \section{Narzędzia}
 	Lista narzędzi, które warto mieć:
@@ -255,11 +256,14 @@ Każdy może mieć wgląd jedynie do własnej karty postaci.
 					\item \larpcardlinepower{Niewidoczność}{Zasłona cienia}{\larpcardlineversus{4}{Siła}}{Wtapiasz się w tło i cię nie widać.}
 					\item \larpcardlinepower{Dominacja}{Obłęd}{\larpcardlineversus{7}{Siła Woli}}{Nieświadomie zadajesz powierzchowne obrażenia Siły Woli.}
 					\item \larpcardlinepower{Dominacja}{Mesmeryzm}{\larpcardlineversus{5}{Siła Woli}}{Rozkazujesz komuś natychmiast wykonać konkretne instrukcje.}
+					\item \larpcardlinepower{Dominacja}{Podświadome instrukcje}{\larpcardlineversus{6}{Siła}}{Zapisujesz w kimś odpowiedni warunek i akcję, którą ma wykonać, w formie tekstu na karteczce: \emph{Jeśli stanie się X to zrób Y.} Druga osoba wykonuje w tajemnicy test \larpcardlineversus{5}{Siła}, czy nie udało jej się przezwyciężyć komendy.}
+					\item \larpcardlinepower{Broń}{Sztylet}{\larpcardlineweapon{-1}}{Atak z bliska.}
 				\end{itemize}
 
 			}{
 				\begin{enumerate}[noitemsep]
 					\item Zwalić winę za obłęd Księcia na kogoś innego.
+					\item Nie pozwolić, aby klucznik dowiedział się o twoim diabolizmie.
 					\item Przeżyć.
 					\item Zostać następcą Księcia.
 				\end{enumerate}
@@ -273,12 +277,15 @@ Każdy może mieć wgląd jedynie do własnej karty postaci.
 			Twój ojciec wyklął ciebie, gdy zacząłeś lepiej sobie radzić w mocach Nekromancji, niż on sam.
 			Możesz użyć mocy, aby zobaczyć duchy w danym miejscu.
 			Nie lubisz swojego brata i nie możesz pozwolić, aby przejął władzę.
-			Chcesz aby władza została w rękach Camarilli.}
+			Chcesz aby władza została w rękach Camarilli.
+			Oblivion to twoja broń i nie potrzebujesz żadnej innej.}
 			{
 				\begin{itemize}[noitemsep]
-					\item \larpcardlinepower{Nekromacja}{Wizja Obliviona}{\larpcardlineversus{4}{Siła}}{Potrafisz zobaczyć wszystkie duchy w pomieszczeniu.}
-					\item \larpcardlinepower{Nekromacja}{Ręce Ahrimana}{\larpcardlineversus{5}{Siła}}{Macki wychodzą z cieni, poruszają się po powierzchniach, mogą atakować i manipulować rzeczami.}
-					%TODO
+					\item \larpcardlinepower{Nekromancja}{Wizja Obliviona}{Pobudzenie}{Potrafisz zobaczyć wszystkie duchy w pomieszczeniu.}
+					\item \larpcardlinepower{Nekromancja}{Ręce Ahrimana}{\larpcardlineversus{5}{Siła}}{Macki wychodzą z cieni, poruszają się po powierzchniach, mogą atakować i manipulować rzeczami.}
+					\item \larpcardlinepower{Nekromancja}{Dotyk Obliviona}{\larpcardlineversus{5}{Siła}}{Twój dotyk powoduje poważne obrażenia \larpcardlineweapon{+2}, uszkadzając ciało bądź dotykane przedmioty. Bronie tracą jeden punkt siły.}
+					\item \larpcardlinepower{Dominacja}{Zatarcie wspomnień}{\larpcardlineversus{6}{Siła}}{Mówisz ofierze, jakie jej znane ci wspomnienia mają być zatarte podanymi.}
+					\item \larpcardlinepower{Prezencja}{Zachwyt}{\larpcardlineversus{4}{Siła}}{Powodujesz, że ofiara na krótko zmienia nastawienie do ciebie i nie chce atakować.}
 				\end{itemize}
 			}{
 				\begin{enumerate}[noitemsep]
@@ -304,8 +311,9 @@ Każdy może mieć wgląd jedynie do własnej karty postaci.
 				\begin{itemize}[noitemsep]
 					\item \larpcardlinepower{Nadwrażliwość}{Fatamorgana}{\larpcardlineversus{4}{Siła}}{Tworzysz iluzje wpływające na zmysły wszystkich wokół.}
 					\item \larpcardlinepower{Nadwrażliwość}{Odczytywanie duszy}{\larpcardlineversus{6}{Siła Woli}}{Odczytujesz gatunek osoby, jej cechy i liczniki, dowiadujesz się czy popełniła diabolizm.}
-					\item \larpcardlinepower{Nadwrażliwość}{Przeczucie}{\larpcardlinepassive{-}}{Pozwala podejrzeć karteczkę na stosie dla ciebie albo kogoś innego.}
-					\item \larpcardlinepower{Nadwrażliwość}{Wyczucie niewidocznego}{\larpcardlineversus{3}{Siła}}{Pozwala wykryć ducha w pokoju.}
+					\item \larpcardlinepower{Nadwrażliwość}{Przeczucie}{Pobudzenie}{Pozwala prywatnie podejrzeć pierwszą karteczkę na stosie.}
+					\item \larpcardlinepower{Nadwrażliwość}{Wyczucie niewidocznego}{Pasywna}{Pozwala w przybliżeniu wyczuć niewidzialne rzeczy w okolicy.}
+					\item \larpcardlinepower{Broń}{Pęk kluczy}{\larpcardlineweapon{-1}}{Pęk bardzo ostrych kluczy na sznurku jest dobrą bronią.}
 				\end{itemize}
 			}{
 				\begin{enumerate}[noitemsep]
@@ -328,8 +336,10 @@ Każdy może mieć wgląd jedynie do własnej karty postaci.
 			}{
 				\begin{itemize}[noitemsep]
 					\item \larpcardlinepower{Transformacja}{Waga piórka}{Pobudzenie}{Zmniejszasz swój ciężar niemal do zera.}
-					\item \larpcardlinepower{Transformacja}{Pierwotna broń}{\larpcardlineversus{9}{Siła}}{Zmieniasz ręce w ostrza i możesz atakować nimi jak srebrem.}
+					\item \larpcardlinepower{Transformacja}{Pierwotna broń}{Pobudzenie}{Zmieniasz ręce w ostrza i możesz atakować nimi jak srebrem \larpcardlineweapon{+4}}.
 					\item \larpcardlinepower{Nadwrażliwość}{Obeah}{\larpcardlineversus{6}{2}}{Leczysz tyle powierzchownych obrażeń Siły Woli, ile masz nadwyżek punktów sukcesu.}
+					\item \larpcardlinepower{Przyspieszenie}{Przebiegnięcie}{\larpcardlineversus{6}{Siła}}{Potrafisz natychmiastowo przebiec przez obszar i biegać po wodzie.}
+					\item \larpcardlinepower{Broń}{Miecz}{\larpcardlineweapon{+2}}{Zwykły metalowy miecz, jakich wiele.}
 				\end{itemize}
 			}{
 				\begin{enumerate}[noitemsep]
@@ -339,8 +349,36 @@ Każdy może mieć wgląd jedynie do własnej karty postaci.
 					\item Dowiedzieć się, co to za nowe moce posiadasz.
 				\end{enumerate}
 			}{
-			\larpcardlineattributes{5}{4}{4}}
+			\larpcardlineattributes{5}{4}{6}}
 			{\larpcardlinecompulsion{Obłęd na temat jakiejś rzeczy lub kogoś, możesz mówić tylko o tym.}}
+			
+		\thispagestyle{empty}
+		\larpcardcharacter{Ryszard}{
+			\larpcardlinespecies{Wampir Nosferatu}{Szeryf Księcia}{Dworzanie Księcia, Camarilla}}{
+			Całe nieżycie byłeś razem z Księciem.
+			Zwykle nosisz zakryty hełm aby wzbudzać mniejszy strach wśród wrogów waszej domeny.
+			Nie pamiętasz, gdy ostatni raz widziałeś swoją twarz w lustrze, a nadal masz koszmary.
+			Posiadasz zastraszanie oraz znasz się na anatomii i torturach.
+			Umiesz obsługiwać zaawansowane urządzenia technologiczne.}
+			{
+				\begin{itemize}[noitemsep]
+					\item \larpcardlinepower{Nosferatu}{Wygląd Nosferatu}{\larpcardlineversus{6}{Siła Woli}}{Pokazujesz swój upiorny wygląd i zadajesz powierzchowne obrażenia Siły Woli \larpcardlineweapon{+0}.}
+					\item \larpcardlinepower{Animalizm}{Poskromienie Bestii}{\larpcardlineversus{7}{Siła}}{Powoduje apatię lub blokuje używanie mocy krwi.}
+					\item \larpcardlinepower{Potencja}{Daleki skok}{Pobudzenie}{Pozwala przeskoczyć kawałek podłoża.}
+					\item \larpcardlinepower{Niewidoczność}{Niewidoczne przejście}{Pobudzenie}{Pozwala na przemykanie, będąc niezauważalnym, jeśli się jest cicho i zniknęło się niezauważonym.}
+					\item \larpcardlinepower{Broń}{Wyrąbisty miecz}{\larpcardlineweapon{+3}}{Ten miecz spopielił już wielu wrogów Camarilli, a nadal się nie stępił.}
+					%TODO
+				\end{itemize}
+
+			}{
+				\begin{enumerate}[noitemsep]
+					\item Uratować Księcia.
+					\item Ochronić poddanych.
+					\item Ochronić mury zamku, abyście dalej mogli w nim mieszkać.
+				\end{enumerate}
+			}{
+			\larpcardlineattributes{6}{6}{7}}
+			{\larpcardlinecompulsion{Kryptofilia. Chęć poznania wszystkich możliwych sekretów wszystkiego wokół.}}
 			
 		\thispagestyle{empty}
 		\larpcardcharacter{Amelia}{
@@ -371,30 +409,6 @@ Każdy może mieć wgląd jedynie do własnej karty postaci.
 			{\larpcardlinecompulsion{Osądzenie i zabójstwo każdego, kto się nie zgadza z twoimi przekonaniami.}}
 			
 		\thispagestyle{empty}
-		\larpcardcharacter{Ryszard}{
-			\larpcardlinespecies{Wampir Nosferatu}{Szeryf Księcia}{Dworzanie Księcia, Camarilla}}{
-			Całe nieżycie byłeś razem z Księciem.
-			Zwykle nosisz zakryty hełm aby wzbudzać mniejszy strach wśród wrogów waszej domeny.
-			Nie pamiętasz, gdy ostatni raz widziałeś swoją twarz w lustrze, a nadal masz koszmary.
-			Posiadasz zastraszanie oraz znasz się na anatomii i torturach.
-			Umiesz obsługiwać zaawansowane urządzenia technologiczne.}
-			{
-				\begin{itemize}[noitemsep]
-					\item \larpcardlinepower{Nosferatu}{Wygląd Nosferatu}{\larpcardlineversus{6}{Siła Woli}}{Pokazujesz swój upiorny wygląd i zadajesz powierzchowne obrażenia Siły Woli}
-					%TODO
-				\end{itemize}
-
-			}{
-				\begin{enumerate}[noitemsep]
-					\item Uratować Księcia.
-					\item Ochronić poddanych.
-					\item Ochronić mury zamku, abyście dalej mogli w nim mieszkać.
-				\end{enumerate}
-			}{
-			\larpcardlineattributes{6}{6}{7}}
-			{\larpcardlinecompulsion{Kryptofilia. Chęć poznania wszystkich możliwych sekretów wszystkiego wokół.}}
-			
-		\thispagestyle{empty}
 		\larpcardcharacter{Dionizy Duczeski}{
 			\larpcardlinespecies{Naturalny ghul}{Znajomy Księcia}{Dworzanie Księcia, Camarilla}}{
 			Ghule stworzone dawno temu przez Tzimisce po wielu pokoleniach nauczyły się tworzyć własne Witæ i rozmnażać jak ludzie.
@@ -408,7 +422,11 @@ Każdy może mieć wgląd jedynie do własnej karty postaci.
 			{
 				\begin{itemize}[noitemsep]
 					\item \larpcardlinepower{Wykształcenie}{Przekonywanie}{\larpcardlinepassive{7}}{Masz dar przekonywania wampirów, aby cię nie wyssali.}
-					%TODO
+					\item \larpcardlinepower{Wyposażenie}{Nakręcana zbroja}{\larpcardlinepassive{4}}{Atakujący musi zdać dodatkowy test, aby sprawdzić, czy automatyczna zbroja nie zablokowała jego ataku całkowicie.}
+					\item \larpcardlinepower{Odporność}{Twardy umysł}{\larpcardlinepassive{5}}{Twoja Siła Woli używana w obronie jest wzmocniona.}
+					\item \larpcardlinepower{Wyposażenie}{Automaton ratowniczy}{\larpcardlineversus{5}{3}}{Wykonaj Pobudzenie krwi, aby zasilić automaton i zdaj test, aby zgasić pożar lub użyć większej łyżki do odgruzowywania.}
+					\item \larpcardlinepower{Wyposażenie}{Automaton obronny}{\larpcardlinepassive{3}}{Wykonaj pobudzenie krwi, aby zasilić automaton, który będzie chronił dowolną grupę osób. Ktokolwiek was atakuje, będzie musiał dodatkowo zdać test.}
+					\item \larpcardlinepower{Broń}{Zawodny pistolet na krew}{\larpcardlineversus{3}{Siła}}{Musisz wykonać Pobudzenie krwi, aby naładować pistolet. Zadaje \larpcardlineweapon{+0}.}
 				\end{itemize}
 			}
 			{
@@ -436,9 +454,12 @@ Każdy może mieć wgląd jedynie do własnej karty postaci.
 			Potrafisz rozpoznać moce transformacji, jeśli ktoś ich używa.}
 			{
 				\begin{itemize}[noitemsep]
+					\item \larpcardlinepower{Wyposażenie}{Kolczuga}{Pasywna}{Wszystkie ciężkie obrażenia zamieniają się na powierzchowne.}
+					\item \larpcardlinepower{Prawdziwa Wiara}{Niesmaczna krew}{Pasywna}{Kto napije się krwi, musi za każdy punkt wykonać \larpcardlineversus{10}{Siła Woli}.}
 					\item \larpcardlinepower{Prawdziwa Wiara}{Odstraszenie wampirów}{\larpcardlineversus{9}{Siła Woli}}{Zmuszasz wszystkie wampiry, aby uciekły z pokoju.}
 					\item \larpcardlinepower{Prawdziwa Wiara}{Wystraszenie duchów}{\larpcardlineversus{8}{Siła Woli}}{Zadajesz obrażenia Siły Woli wszystkim duchom w pokoju, jeśli w nim są}.
 					\item \larpcardlinepower{Inkwizycja}{Egzorcyzm}{\larpcardlineversus{7}{Siła Woli}}{Wypędzasz ducha z opętanej osoby i zadajesz mu powierzchowne obrażenia.}
+					\item \larpcardlinepower{Broń}{Pastorał}{\larpcardlineweapon{+2}}{Święcony pastorał zadaje poważne obrażenia wampirom i powierzchowne śmiertelnikom.}
 				\end{itemize}
 			}
 			{
