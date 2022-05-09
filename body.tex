@@ -60,6 +60,27 @@ Każdy może mieć wgląd jedynie do własnej karty postaci.
 		Pożar można ugasić wodą, przebiec przez niego itp.
 		Wampiry muszą testować siłę woli na to.
 
+\section{Walka}
+	Sposób opisu rozwiązywania konfliktów siłowych.
+	
+	Każda postać przy konflikcie dysponuje pulą punktów zapisanych przy używanej mocy lub w parametrze \textbf{Siła}, jeśli używa niestandardowych zagrywek.
+	Obrona przeciwko czemuś jest zazwyczaj z parametru \textbf{Siła}, \textbf{Siła Woli}, bądź bardzo rzadko z pasywnej mocy.
+	
+	Punkty Siły Woli są brane z ilości pustych kratek w liczniku.
+	
+	Obie strony rzucają w kubku, bądź w dłoniach liczbę monet w ilości cechy.
+	Różnica w liczbie zwycięstw na korzyść atakującego oznacza liczbę zadanych obrażeń.
+	Zwycięstwa na korzyść atakowanego oznaczają, że udało się jej uniknąć konsekwencji, chyba że posiada odpowiednią pasywną moc do kontrataku.
+	
+	Jeśli ktoś chce kogoś zaatakować, to musi takie osoby wpierw pochwycić lub zagonić w kozi róg, chyba że jest niewidzialny, bądź złapie je fizycznie z zaskoczenia.
+	Jeśli jest kilka osób, które chcę walczyć ze sobą, to rzucają do skutku z parametru \textbf{Siła} i kto będzie miał najwięcej zwycięstw, zaczyna atak.
+	Osoba atakująca ma dodatkową monetę, jeśli ktoś jej pomaga w ataku.
+	Jeśli celem ataku jest kilka osób, wtedy należy podzielić swoją pulę punktów i zaatakować każdego osobno jej częścią.
+	
+	Atakujący zadaje obrażenia, osoba atakowana prawie nigdy nie zadaje obrażeń.
+	
+	Po wykonaniu akcji atakowana osoba może próbować uciekać bądź atakować agresora z powrotem.
+
 \section{Narzędzia}
 	Lista narzędzi, które warto mieć:
 	\begin{enumerate}
@@ -115,7 +136,7 @@ Każdy może mieć wgląd jedynie do własnej karty postaci.
 	Mechaniki dla śmiertelników:
 	\begin{itemize}
 		\item Po utracie życia jesteś w stanie krytycznym na granicy śmierci.
-		\item PO utracie Siły Woli wpadasz w depresję.
+		\item Po utracie Siły Woli wpadasz w depresję.
 	\end{itemize}
 
 	Mechaniki dla ghuli:
@@ -196,6 +217,7 @@ Każdy może mieć wgląd jedynie do własnej karty postaci.
 		% Przynęta - na środku pojawia się coś bardzo cennego dla osoby, która odkrywa karteczkę, a jeśli dotknie tego, zostanie pożarta
 		% Fala kwasu - zadaje dodatkowe obrażenia jeśli oblany straci życie następnym razem
 		% Grząski teren - zamek wciągnie i zada obrażenia tym, który nie przebiegną wystarczająco szybko
+		% Płytki naciskowe - płytki da się rozróżnić i niektóre zapadają się wprost do zbiornika macek
 		% Zakryte przejście - przed wami ściana i tylko wyczuleni mogą wykryć że jest sztuczna, nic nie robi
 		% Jęzor - wyskakuje jęzor i atakuje tego, kto wyrzuci najmniejszą liczbę sukcesów na fizyczne
 
@@ -256,6 +278,7 @@ Każdy może mieć wgląd jedynie do własnej karty postaci.
 				\begin{itemize}[noitemsep]
 					\item \larpcardlinepower{Nekromacja}{Wizja Obliviona}{\larpcardlineversus{4}{Siła}}{Potrafisz zobaczyć wszystkie duchy w pomieszczeniu.}
 					\item \larpcardlinepower{Nekromacja}{Ręce Ahrimana}{\larpcardlineversus{5}{Siła}}{Macki wychodzą z cieni, poruszają się po powierzchniach, mogą atakować i manipulować rzeczami.}
+					%TODO
 				\end{itemize}
 			}{
 				\begin{enumerate}[noitemsep]
@@ -332,7 +355,8 @@ Każdy może mieć wgląd jedynie do własnej karty postaci.
 				\begin{itemize}[noitemsep]
 					\item \larpcardlinepower{Magia Krwi}{Korozyjne Vitæ}{Pobudzenie}{Twoja krew produkuje silny kwas, jeden test pobudzenia na 1 dm³ materiału.}
 					\item \larpcardlinepower{Magia Krwi}{Stłumienie Vitæ}{\larpcardlineversus{4}{Siła Woli}}{Usuwasz innemu użytkownikowi krwi jeden punkt krwi.}
-					\item \larpcardlinepower{Magia Krwi}{Dotyk Skorpiona}{Pobudzenie}{Twoja krew produkuje silną truciznę, którą można pokryć broń dla podwójnych obrażeń lub dać sobie wyssać.}
+					\item \larpcardlinepower{Magia Krwi}{Dotyk Skorpiona}{Pobudzenie}{Twoja krew produkuje silną truciznę, którą można pokryć broń dla podwójnych obrażeń.}
+					\item \larpcardlinepower{Magia Krwi}{Łyk Skorpiona}{\larpcardlinepassive{6}}{Używasz Dotyku Skorpiona, aby wysysaną sobie krew zmienić w truciznę. Wysysający musi zdać test.}
 					\item \larpcardlinepower{Magia Krwi}{Kradzież Vitæ}{\larpcardlineversus{6}{Siła}}{Rozrywasz komuś tętnicę na odległość, aby przesikać 1 punkt krwi wprost do ust. Rana się zasklepia.}
 				\end{itemize}
 			}
@@ -356,7 +380,8 @@ Każdy może mieć wgląd jedynie do własnej karty postaci.
 			Umiesz obsługiwać zaawansowane urządzenia technologiczne.}
 			{
 				\begin{itemize}[noitemsep]
-					\item TODO
+					\item \larpcardlinepower{Nosferatu}{Wygląd Nosferatu}{\larpcardlineversus{6}{Siła Woli}}{Pokazujesz swój upiorny wygląd i zadajesz powierzchowne obrażenia Siły Woli}
+					%TODO
 				\end{itemize}
 
 			}{
@@ -366,13 +391,10 @@ Każdy może mieć wgląd jedynie do własnej karty postaci.
 					\item Ochronić mury zamku, abyście dalej mogli w nim mieszkać.
 				\end{enumerate}
 			}{
-			\larpcardlineattributes{6}{6}{5}}
+			\larpcardlineattributes{6}{6}{7}}
 			{\larpcardlinecompulsion{Kryptofilia. Chęć poznania wszystkich możliwych sekretów wszystkiego wokół.}}
 			
-
-%TODO przerwa
-
-			
+		\thispagestyle{empty}
 		\larpcardcharacter{Dionizy Duczeski}{
 			\larpcardlinespecies{Naturalny ghul}{Znajomy Księcia}{Dworzanie Księcia, Camarilla}}{
 			Ghule stworzone dawno temu przez Tzimisce po wielu pokoleniach nauczyły się tworzyć własne Witæ i rozmnażać jak ludzie.
@@ -386,6 +408,7 @@ Każdy może mieć wgląd jedynie do własnej karty postaci.
 			{
 				\begin{itemize}[noitemsep]
 					\item \larpcardlinepower{Wykształcenie}{Przekonywanie}{\larpcardlinepassive{7}}{Masz dar przekonywania wampirów, aby cię nie wyssali.}
+					%TODO
 				\end{itemize}
 			}
 			{
@@ -396,6 +419,38 @@ Każdy może mieć wgląd jedynie do własnej karty postaci.
 				\end{enumerate}
 			}{
 			\larpcardlineattributes{4}{8}{4}}
+			{}
+			
+		\thispagestyle{empty}
+		\larpcardcharacter{Ojciec Arnold}{
+			\larpcardlinespecies{Człowiek}{Zakonnik Inkwizycji}{Inkwizycja}}{
+			Zostałeś posłany przez Zakon Św. Leopolda, aby upewnić się, że wszystko w zamku ma być ostatecznie martwe.
+			Nie podzielasz jednak wszystkich idei swoich przełożonych.
+			Chcesz uratować wszystkie dobre istoty w tajemnicy przed resztą zakonu.
+			Posiadasz Prawdziwą Wiarę, która odstrasza wampiry.
+			Zamek jest ostrzeliwany przez Inkwizycję, masz informację o wszystkich kolejnych zawałach korytarzy.
+			Wiesz, że zamek jest wielkim Kniaziem stworzony dawno temu przez wojewodę Tzimisce.
+			Posiada rdzeń, który wszystko kontroluje.
+			Znasz jedną ze współrzędnych rdzenia.
+			Możesz wykonać egzorcyzm na kimś, aby wypędzić z niego ducha.
+			Potrafisz rozpoznać moce transformacji, jeśli ktoś ich używa.}
+			{
+				\begin{itemize}[noitemsep]
+					\item \larpcardlinepower{Prawdziwa Wiara}{Odstraszenie wampirów}{\larpcardlineversus{9}{Siła Woli}}{Zmuszasz wszystkie wampiry, aby uciekły z pokoju.}
+					\item \larpcardlinepower{Prawdziwa Wiara}{Wystraszenie duchów}{\larpcardlineversus{8}{Siła Woli}}{Zadajesz obrażenia Siły Woli wszystkim duchom w pokoju, jeśli w nim są}.
+					\item \larpcardlinepower{Inkwizycja}{Egzorcyzm}{\larpcardlineversus{7}{Siła Woli}}{Wypędzasz ducha z opętanej osoby i zadajesz mu powierzchowne obrażenia.}
+				\end{itemize}
+			}
+			{
+				\begin{enumerate}[noitemsep]
+					\item Uratować wszystkie dobre istoty, w tajemnicy przed Inkwizycją i Watykanem.
+					\item Nawrócić złe istoty na dobrą drogę.
+					\item Przekonać Ludwika, aby sobie poszedł lub do was dołączył.
+					\item Zniszczyć zamek.
+				\end{enumerate}
+
+			}{
+			\larpcardlineattributes{4}{6}{3}}
 			{}
 
 %TODO
@@ -424,6 +479,7 @@ Każdy może mieć wgląd jedynie do własnej karty postaci.
 % Ochronić mury zamku, aby był bezpieczny dla nowych lokatorów
 % Kompulsja: Obsesja na punkcie czegoś
 
+
 % Bartłomiej Bratowicz, naturalny ghul, zły
 % Naturalny ghul, którego ród brata się z Sabatem i wszystkim co najgorsze. Bezwzględny i obleśny. Chcesz się zemścić na Duczeskich za odwrócenie się od Tzimisce oraz na podwładnych Hadeona za odwrócenie się od ciebie. Posiadasz branie dystansowe i białe bronie na wampiry. Masz obleśny koc, którym się ubierasz, którego nawet pożar nie chce trawić.
 % Gaszenie pożaru (5)
@@ -433,15 +489,7 @@ Każdy może mieć wgląd jedynie do własnej karty postaci.
 % Zabić wszystkich innych w najokrutniejszy sposób
 % Doprowadzić kogoś do załamania nerwowego
 
-% Ojciec Arnold, człowiek, ksiądz Inkwizycji, ludzie
-% Zostałeś posłany przez Zakon św. Leopolda, aby upewnić się, że wszystko w zamku ma być ostatecznie martwe. Nie podzielasz jednak wszystkich idei swoich przełożonych. Chcesz uratować wszystkie dobre istoty w tajemnicy przed resztą zakonu. Posiadasz Prawdziwą Wiarę, która odstrasza wampiry. Zamek jest ostrzeliwany przez Inkwizycję, dostajesz informację radiową o wszystkich zawałach jakie się zdarzyły lub zdarzą. Nie grozi ci przysypanie. Wiesz, że zamek jest wielkim Kniaziem stworzony dawno temu przez wojewodę Tzimisce. Posiada rdzeń, który wszystko kontroluje. Znasz jedną ze współrzędnych rdzenia. Możesz wykonać egzorcyzm na kimś, aby wypędzić z niego ducha. Potrafisz rozpoznać moce transformacji, jeśli ktoś ich używa. Przypałętał się do was jakiś dziwny fan wampirów Ludwik, chcesz go przekonać, aby sobie poszedł lub wstąpił do Inkwizycji.
-% Pomodlenie się odstrasza wampiry (6)
-% Egzorcyzm wypędza ducha przeciwko jego SW (7)
-% Śpiewanie psalmów odstrasza duchy z pokoju, przeciwko SW (5), ale musisz wpierw wiedzieć, że jest tutaj duch
-% Uratować wszystkie dobre istoty, w tajemnicy przed Inkwizycją i Watykanem
-% Nawrócić złe istoty na dobrą drogę
-% Przekonać Ludwika, aby sobie poszedł lub do was dołączył
-% Zniszczyć zamek
+
 
 % Siostra Anastazja, człowiek, siostra agentka z Watykanu, ludzie
 % Inkwizycja nie ma najlepszej renomy w Watykanie. Dlatego sam papież posłał ciebie, abyś kontrolowała postępy w niszczeniu zamku. Posiadasz pistolet na wodę święconą i duże baniaki na plecach. Jesteś bezwzględna w wykonywaniu swojej pracy i nie masz litości dla pomiotów szatańskości. Przypałętał się do was dziwny człowiek Ludwik, nie pozwól aby dołączył i wzmocnił Inkwizycję.
