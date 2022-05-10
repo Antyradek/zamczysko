@@ -39,7 +39,7 @@
 		#3
 		
 		\puttable{c c c}{
-		\textbf{Test:} $\geqslant$ #4 & \textbf{Życie:} #5 & \textbf{Krew:} #6 \\
+		\textbf{Test} $\geqslant$ #4 & \textbf{Życie:} #5 & \textbf{Krew:} #6 \\
 		}
 		
 	\end{tcolorbox}
@@ -87,10 +87,10 @@
 	#1 -- \textbf{#2} -- #3 -- #4
 }
 \newcommand{\larpcardlineversus}[2]{
-	#1 $\nleftrightarrow$ #2
+	\textbf{Test} #1 $\geqslant$ \textbf{Test} #2
 }
 \newcommand{\larpcardlinepassive}[1]{
-	Pasywna \textbf{Test wroga:} $<$ #1
+	\textbf{Test wroga} $<$ #1
 }
 \newcommand{\larpcardlinecompulsion}[1]{
 	\begin{center}
@@ -100,8 +100,9 @@
 \newcommand{\larpcardlineweapon}[1]{
 	\textbf{Obrażenia:} #1
 }
-\newcommand{\larpcardcharacter}[7]
+\newcommand{\larpcardcharacter}[8]
 {
+	\vspace{3em}
 	\begin{tcolorbox}[colback=white, size=fbox]
 
 		\begin{center}
@@ -126,4 +127,6 @@
 		
 		#7
 	\end{tcolorbox}
+	\vspace{3em}
+	\textbf{Moc dawana na diabolizm:}\\#8
 }
