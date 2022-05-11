@@ -45,6 +45,15 @@
 	\end{tcolorbox}
 }
 
+% Karta z informacjami
+\newcommand{\larpcardinfo}[1]{
+	\begin{tcolorbox}[colback=white]
+		\begin{center}
+		#1
+		\end{center}
+	\end{tcolorbox}
+}
+
 % Karta obiektu
 \newcommand{\larpcarditem}[2]
 {
@@ -129,4 +138,13 @@
 	\end{tcolorbox}
 	\vspace{3em}
 	\textbf{Moc dawana na diabolizm:}\\#8
+}
+% Powtarzanie komendy kilka razy
+\newcounter{counteritem}
+\newcommand{\textrepeat}[2]{
+	\setcounter{counteritem}{0}
+	\loop
+	#2
+	\addtocounter{counteritem}{1}\ifnum\value{counteritem}<#1
+	\repeat
 }
